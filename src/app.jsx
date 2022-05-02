@@ -1,9 +1,11 @@
 import React from 'react';
 import './app.css';
-import Habit from './components/habit';
+import Habits from './components/habits';
 
 function App() {
-  return <Habit title={'like'}/>
+  //Habits를 불러온다.
+  return <Habits/>
+  
 }
 
 export default App;
