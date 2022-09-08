@@ -1,6 +1,13 @@
 import React, { PureComponent } from "react";
 
 class Habit extends PureComponent {
+  componentDidMount() {
+    console.log(`habit: ${this.props.habit.name} mounted`);
+  }
+
+  componentWillUnmount() {
+    console.log(`habit: ${this.props.habit.name} will unmounted`);
+  }
   handleIncrement = (habit) => {
     // state 오브젝트 안에 있는 count 를 증가한 뒤 state를 업데이트 해야 함
     this.props.onIncrement(this.props.habit);
